@@ -12,7 +12,7 @@ public class FileHandling {
 
 			Connection con = null;
 			PreparedStatement pstmt = null;
-
+   
 			try {
 				con = DriverManager.getConnection("jdbc:mysql://localhost/jan06", "root", "root");
 

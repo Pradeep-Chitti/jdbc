@@ -17,7 +17,7 @@ public class Runner {
 //	deletemovie();
 //	dao.getNameByMovieID();
 //	dao.getAll();
-	dao.getLanguageAndBudgetByMovieName(movieName);
+	dao.getLanguageAndBudgetByMovieName("Kabja");
 	}
 
 	private static void moviename() {
