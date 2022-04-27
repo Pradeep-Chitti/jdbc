@@ -1,0 +1,19 @@
+package com.xworkz.hibernate;
+
+import org.hibernate.SessionFactory;
+
+import com.mysql.cj.Session;
+
+import jakarta.transaction.Transaction;
+
+public class RestaurantDAO {
+	public void saveRestaurant(RestaurantEntity entity)
+	Configuaration cfg=new Configuaration();
+	cfg.congigauration();
+	SessionFactory sessionFactory=cfg.buildset();
+	Session session=sessionFactory.openSession();
+	Transaction tx=session.beginTransaction();
+	session.persist(entity);
+	tx.commit();
+
+}
